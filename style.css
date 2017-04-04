@@ -1,0 +1,17 @@
+*{
+  background-color: #0B79FF;
+}
+#top{
+  text-align: center;
+}
+#center{
+  text-align: center;
+}
+.Cicero {
+  float: right;
+  font-family: Impact;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 10px;
+  border: 3px solid #000;
+}
