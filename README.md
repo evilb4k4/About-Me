@@ -1,2 +1,3 @@
 # Week-1-d21
-Home work repo for 201d21
+Homework repo for 201d21
+author Adan Rabadan,
