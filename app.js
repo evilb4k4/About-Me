@@ -16,36 +16,36 @@ function yesNoQuestion (){
     alert('That Seattle for you.');
     userScore++;
   } else if (question2.toLowerCase() === 'no' || question2.toLowerCase() === 'n') {
-    alert('What are doing inside go get some sunny before it runs away');
+    alert('What are doing inside go get some sun before it runs away');
   } else {
     alert('Simple yes or no question.');
   }
 
-  var answer = prompt('Do you like Batman?');
-  if (answer.toLowerCase() === 'yes' || answer.toLowerCase() === 'y') {
-    alert('Batman is awesome.');
+  var question3 = prompt('Do you like Batman?');
+  if (question3.toLowerCase() === 'yes' || question3.toLowerCase() === 'y') {
+    alert('Batman is awesome!.');
     userScore++;
-  } else if (answer.toLowerCase() === 'no' || answer.toLowerCase() === 'n') {
+  } else if (question3.toLowerCase() === 'no' || question3.toLowerCase() === 'n') {
     alert('Hater');
   } else {
     alert('Simple yes or no question.');
   }
 
-  var answer = prompt('Do you like tacos?');
-  if (answer.toLowerCase() === 'yes' || answer.toLowerCase() === 'y') {
-    alert('Tacos are awsome!');
+  var question4 = prompt('Do you like tacos?');
+  if (question4.toLowerCase() === 'yes' || question4.toLowerCase() === 'y') {
+    alert('Tacos are the best');
     userScore++;
-  } else if (answer.toLowerCase() === 'no' || answer.toLowerCase() === 'n') {
+  } else if (question4.toLowerCase() === 'no' || question4.toLowerCase() === 'n') {
     alert('More tacos for me then');
   } else {
     alert('Simple yes or no question.');
   }
 
-  var answer = prompt('Do you play video game?');
-  if (answer.toLowerCase() === 'yes' || answer.toLowerCase() === 'y') {
+  var question5 = prompt('Do you play video game?');
+  if (question5.toLowerCase() === 'yes' || question5.toLowerCase() === 'y') {
     alert('Video games are my favorite pass time');
     userScore++;
-  } else if (answer.toLowerCase() === 'no' || answer.toLowerCase() === 'n') {
+  } else if (question5.toLowerCase() === 'no' || question5.toLowerCase() === 'n') {
     alert('It okay we all can\'t be cool');
   } else {
     alert('Simple yes or no question.');
