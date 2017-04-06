@@ -53,7 +53,7 @@ function yesNoQuestion (){
   }
 }
 yesNoQuestion();
-question 6
+//question 6
 var correctGuess = false;
 
 function guessNumber(){
@@ -75,14 +75,14 @@ function guessNumber(){
 }
 
 guessNumber();
-Question 7
+//Question 7
 var newArray = ['England','Mexico','Germany','Korea', 'Turkey','Russia'];
 var countryGuess = false;
 function guessCountry(){
   for (var i = 0; i < newArray.length && !countryGuess; i++){
-    var question7 = prompt('Can you guess what country I\'ve travel to while in the military?');
-    console.log('first loop works', question7);
+    var question7 = prompt('Can you guess what country I\'ve travel to while in the military?').toLowerCase();
     if (question7.toLowerCase() === newArray[i].toLowerCase()) {
+      console.log('first loop works', question7);
       alert('Correct!');
       countryGuess = true;
       userScore++;
