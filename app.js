@@ -1,4 +1,5 @@
 'use strict';
+var userScore = 0;
 
 function yesNoQuestion (){
   var question1 = prompt('Do you like scary stories?');
@@ -52,3 +53,45 @@ function yesNoQuestion (){
   }
 }
 yesNoQuestion();
+//question 6
+var correctGuess = false;
+
+function guessNumber(){
+  for (var x = 4; x > 0 && !correctGuess; x--) {
+    var question6 = prompt('Can you guess how many kids I have?');
+    var parsed = parseInt(question6);
+    if (parsed === 2) {
+      alert('You\'re spot on! I have 2 boys');
+      correctGuess = true;
+      userScore++;
+    } else if (parsed < 2) {
+      alert('Too low');
+    } else if (parsed > 2) {
+      alert('Too high');
+    } else {
+      alert('That\'s not an answer!');
+    }
+  }
+}
+
+guessNumber();
+//Question 7
+var newArray = ['England','Mexico','Germany','Korea', 'Turkey','Russia'];
+var countryGuess = false;
+function guessCountry(){
+  for (var i = 0; i < newArray.length && !countryGuess; i++){
+    var question7 = prompt('Can you guess what country I\'ve travel to while in the military?').toLowerCase();
+    if (question7.toLowerCase() === newArray[i].toLowerCase()) {
+      console.log('first loop works', question7);
+      alert('Correct!');
+      countryGuess = true;
+      userScore++;
+    } else {
+      alert('Hint: One of the countries is connected to the USA');
+    }
+  }
+}
+
+guessCountry();
+
+alert('Your score is ' + userScore + ' out of 7');
