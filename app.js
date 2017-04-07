@@ -1,6 +1,6 @@
 'use strict';
 var userScore = 0;
-
+//yesNoQuestion
 function storiesQuestion() {
 
   var question1 = prompt('Do you like scary stories?');
@@ -67,7 +67,6 @@ function videoGames() {
 }
 videoGames();
 
-
 //question 6
 var correctGuess = false;
 
@@ -90,29 +89,26 @@ function kids() {
 }
 kids();
 
-
-
 //Question 7
 
 var newArray = ['England','Mexico','Germany','Korea', 'Turkey','Russia'];
 var countryGuess = false;
 
-function countriesLived() {
-  for (var i = 0; i < newArray.length && !countryGuess; i++){
-    var question7 = prompt('Can you guess what country I\'ve travel to while in the military?').toLowerCase();
-    if (question7.toLowerCase() === newArray[i].toLowerCase()) {
+for (var i = 0; i < 6 && !countryGuess; i++){
+  var question7 = prompt('Can you guess what country I\'ve travel to while in the military?');
+  for (var u = 0; u < newArray.length; u++){
+    if (question7.toLowerCase() === newArray[u].toLowerCase()) {
       console.log('first loop works', question7);
       alert('Correct!');
       countryGuess = true;
       userScore++;
-    } else {
-      alert('Hint: One of the countries is connected to the USA');
     }
   }
 }
+if (countryGuess === false){
+  alert('Hint: One of the countries is connected to the USA');
+
+}
 countriesLived();
-//
-//
-//
-//
-// alert('Your score is ' + userScore + ' out of 7');
+
+alert('Your score is ' + userScore + ' out of 7');
